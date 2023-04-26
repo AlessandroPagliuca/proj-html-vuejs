@@ -7,6 +7,9 @@
                     <p class="card-text fw-semibold">{{ card.data }}</p>
                     <small>{{ card.smallDate }}</small>
                 </div>
+                <span  v-for="tag in carousels.tags">
+                    <span class="badge bg-light text-dark">{{ tag.tag }}</span>
+                </span>
             </div>
         </div>
     </div>
@@ -30,5 +33,15 @@ import { dataCarousels } from '../data/data';
 <style lang="scss" scoped>
     .bg-grey{
         background-color: #F3F3F3;
+    }
+    .card{
+        position: relative;
+
+        .badge{
+            position: absolute;
+            top: 4px;
+            left: 40%;
+            right: 40%;
+        }
     }
 </style>
