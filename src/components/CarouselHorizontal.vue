@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid bg-grey">
-        <div class="d-flex justify-content-center align-items-center p-3">
-            <div class="card m-2" style="width: 18rem; height: 17rem" v-for="card in carousels">
+        <div class="d-flex justify-content-center align-items-center p-3 pos-relative">
+            <div class="card m-2" style="width: 30rem;" v-for="card in carousels">
                 <img :src="'/image/' + card.img" class="card-img-top" alt="...">
                 <div class="card-body text-center">
                     <p class="card-text fw-semibold">{{ card.data }}</p>
@@ -11,6 +11,10 @@
                     <span class="badge bg-light text-dark">{{ tag.tag }}</span>
                 </span>
             </div>
+            <!--btn sx and btn dx-->
+            <button type="button" class="btn fa-solid fa-chevron-left btn-sx"></button>
+
+            <button type="button" class="btn fa-solid fa-chevron-right btn-dx"></button>
         </div>
     </div>
 </template>
@@ -42,6 +46,19 @@ import { dataCarousels } from '../data/data';
             top: 4px;
             left: 40%;
             right: 40%;
+        }
+    }
+    .pos-relative{
+        position: relative;
+
+        .btn-sx, .btn-dx{
+            position: absolute;
+        }
+        .btn-sx{
+            left: 30px;
+        }
+        .btn-dx{
+            right: 30px;
         }
     }
 </style>
