@@ -19,7 +19,7 @@
                 <i class="fa-solid fa-bars"></i>
 
                 <div class="d-flex align-items-center">
-                    <ul class="px-3" v-for="link in linksData">
+                    <ul class="px-3 my-2" v-for="link in linksData">
                         <li>
                             <span class="text-uppercase fw-semibold">{{ link.title }}</span>
                         </li>
@@ -84,7 +84,7 @@ import UpdatesComp from './UpdatesComp.vue';
         
         li, i{
             cursor: pointer;
-            
+
             &:hover{
             color: red;
         }
