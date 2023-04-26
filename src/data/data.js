@@ -5,12 +5,15 @@ const dataLinks = [
             {
                 link:'resources',
             },
+
             {
                 link:'tutorials',
             },
+
             {
                 link:'examples',
             },
+
             {
                 link:'docs',
             },
@@ -84,3 +87,5 @@ const dataLinks = [
         ]
     },
 ]
+
+export{dataLinks};

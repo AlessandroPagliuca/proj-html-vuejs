@@ -13,16 +13,39 @@
                 </div>
             </div>
         </div>
+
+        <div class="box-nav">
+            <div class="container d-flex justify-content-between align-items-center">
+                <i class="fa-solid fa-bars"></i>
+
+                <div class="d-flex align-items-center">
+                    <ul class="px-3" v-for="link in linksData">
+                        <li>
+                            <span class="text-uppercase fw-semibold">{{ link.title }}</span>
+                        </li>
+                    </ul>
+                </div>
+               
+
+                <i class="fa-solid fa-search"></i>
+            </div>
+        </div>
       
     </header>
 </template>
 
 <script>
+import {dataLinks} from '../data/data';
 import UpdatesComp from './UpdatesComp.vue';
     export default {
         name: 'HeaderComp',
         components:{
             UpdatesComp,
+        },
+        data(){
+            return{
+                linksData: dataLinks,
+            }
         }
     }
 </script>
@@ -49,8 +72,23 @@ import UpdatesComp from './UpdatesComp.vue';
 
         }
     }
+    .box-nav{
+        border-top: 1px solid rgb(194, 192, 192);
+        border-bottom: 1px solid rgb(194, 192, 192);
+        width: 100%;
 
-   
-
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+        
+        li, i{
+            cursor: pointer;
+            
+            &:hover{
+            color: red;
+        }
+        }
+    }
 
 </style>
