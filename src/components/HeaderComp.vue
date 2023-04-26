@@ -2,34 +2,39 @@
     <header>
        <UpdatesComp />
        <!--Advertising banner-->
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center py-3">
-                <div class="img-anime ">
-                    <img src="/image/anime-logo.webp" alt="anime-logo">
-                </div>
+       <div class="bg-white">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center py-3">
+                    <div class="img-anime ">
+                        <img src="/image/anime-logo.webp" alt="anime-logo">
+                    </div>
 
-                <div class="img-banner">
-                    <img src="/image/header-banner.webp" alt="">
+                    <div class="img-banner">
+                        <img src="/image/header-banner.webp" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="box-nav">
-            <div class="container d-flex justify-content-between align-items-center">
-                <i class="fa-solid fa-bars"></i>
+            <div class="box-nav">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <i class="fa-solid fa-bars"></i>
 
-                <div class="d-flex align-items-center">
-                    <ul class="px-3 my-2" v-for="link in linksData">
-                        <li>
-                            <span class="text-uppercase fw-semibold">{{ link.title }}</span>
-                        </li>
-                    </ul>
+                    <div class="d-flex align-items-center">
+                        <ul class="px-3 my-2" v-for="link in linksData">
+                            <li>
+                                <span class="text-uppercase fw-semibold">{{ link.title }}</span>
+                            </li>
+                        </ul>
+                    </div>
+                
+
+                    <i class="fa-solid fa-search"></i>
                 </div>
-               
-
-                <i class="fa-solid fa-search"></i>
             </div>
-        </div>
+       </div>
+       
+
+        
       
     </header>
 </template>
@@ -51,16 +56,21 @@ import UpdatesComp from './UpdatesComp.vue';
 </script>
 
 <style lang="scss" scoped>
+    header{
+        width: 100%;
+        height: 179px;
+        position: fixed;
+        z-index: 1000;
 
-    .img-anime{
+        .img-anime{
         width: 160px;
         height: 50px;
 
-        img{
-            width: 100%;
-            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
         }
-    }
     .img-banner{
         width: 420px;
         height: 70px;
@@ -90,5 +100,9 @@ import UpdatesComp from './UpdatesComp.vue';
         }
         }
     }
+
+
+    }
+   
 
 </style>
