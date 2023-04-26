@@ -9,7 +9,7 @@
                         </div>
                         
                         <div class="box-img">
-                            <img src="/image/channels4_profile.jpg" alt="">
+                            <img src="/image/meal-time-150x150.webp" alt="">
                         </div>
 
                         <span class="text-white text-uppercase p-1">{{ getTime() }} the_</span>
