@@ -172,7 +172,7 @@ const dataCarousel = [
         data: 'Fashion Trend Now A Days',
         smallDate: 'December 25, 2022',
         userIcon: 'fa-solid fa-user',
-        dateIcon: 'fa-solid fa-',
+        dateIcon: 'fa-solid fa-calendar-days',
         text: 'demo',
         tags:[
             {
@@ -190,7 +190,7 @@ const dataCarousel = [
         data: 'Travelling Alone Is Awesome',
         smallDate: 'December 26, 2022',
         userIcon: 'fa-solid fa-user',
-        dateIcon: 'fa-solid fa-',
+        dateIcon: 'fa-solid fa-calendar-days',
         text: 'demo',
         tags:[
             {
@@ -208,7 +208,7 @@ const dataCarousel = [
         data: 'Places For A Road Trip',
         smallDate: 'December 25, 2022',
         userIcon: 'fa-solid fa-user',
-        dateIcon: 'fa-solid fa-',
+        dateIcon: 'fa-solid fa-calendar-days',
         text: 'demo',
         tags:[
             {
@@ -226,7 +226,7 @@ const dataCarousel = [
         data: 'Places For A Road Trip',
         smallDate: 'December 25, 2022',
         userIcon: 'fa-solid fa-user',
-        dateIcon: 'fa-solid fa-',
+        dateIcon: 'fa-solid fa-calendar-days',
         text: 'demo',
         tags:[
             {
@@ -244,7 +244,7 @@ const dataCarousel = [
         data: 'Music The Love Of My Life',
         smallDate: 'December 25, 2022',
         userIcon: 'fa-solid fa-user',
-        dateIcon: 'fa-solid fa-',
+        dateIcon: 'fa-solid fa-calendar-days',
         text: 'demo',
         tags:[
             {
@@ -262,7 +262,7 @@ const dataCarousel = [
         data: 'Reasons To Visit France',
         smallDate: 'December 26, 2022',
         userIcon: 'fa-solid fa-user',
-        dateIcon: 'fa-solid fa-',
+        dateIcon: 'fa-solid fa-calendar-days',
         text: 'demo',
         tags:[
             {
@@ -280,7 +280,7 @@ const dataCarousel = [
         data: 'The Best Success Stories',
         smallDate: 'December 25, 2022',
         userIcon: 'fa-solid fa-user',
-        dateIcon: 'fa-solid fa-',
+        dateIcon: 'fa-solid fa-calendar-days',
         text: 'demo',
         tags:[
             {
