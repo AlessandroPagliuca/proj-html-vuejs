@@ -1,6 +1,6 @@
 <template>
     <section class="container">
-        <h4 class="text-uppercase">featured posts</h4>
+        <h4 class="text-uppercase pt-4 pb-2">featured posts</h4>
         <div class="d-flex justify-content-center align-items-center">
             <div class="card m-2" v-for="post in data.dataPosts">
                 <img class="card-img-top" :src="'/image' + post.img" alt="">
