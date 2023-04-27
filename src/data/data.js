@@ -317,6 +317,56 @@ export const data = reactive({
                 }
             ]
         },
+    ],
+    dataTrailer:[
+        {
+            position:1,
+            img: '/sddefault.webp',
+            title: 'Overlord Season 4 - Official',
+            trailer: 'Trailer 3 | AniTV',
+        },
+
+        {
+            position:2,
+            img: '/hqdefault (1).jpg', 
+            title: 'Overlord Season 4 - Official',
+            trailer: 'Trailer 3 | AniTV',
+        },
+
+        {
+            position:3,
+            img: '/sddefault.webp',
+            title: 'Overlord Season 4 - Official',
+            trailer: 'Trailer 3 | AniTV',
+        },
+
+        {
+            position:4,
+            img: '/sddefault.webp',
+            title: 'Overlord Season 4 - Official',
+            trailer: 'Trailer 3 | AniTV',
+        },
+
+        {
+            position:5,
+            img: '/sddefault.webp',
+            title: 'Overlord Season 4 - Official',
+            trailer: 'Trailer 3 | AniTV',
+        },
+
+        {
+            position:6,
+            img: '/sddefault.webp',
+            title: 'Overlord Season 4 - Official',
+            trailer: 'Trailer 3 | AniTV',
+        },
+
+        {
+            position:7,
+            img: '/sddefault.webp',
+            title: 'Overlord Season 4 - Official',
+            trailer: 'Trailer 3 | AniTV',
+        },
     ]
 });
 
