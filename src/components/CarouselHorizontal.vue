@@ -1,13 +1,13 @@
 <template>
     <div class="container-fluid bg-grey">
         <div class="d-flex justify-content-center align-items-center p-3 pos-relative">
-            <div class="card m-2" style="width: 30rem;" v-for="card in carousels">
+            <div class="card m-2" style="width: 30rem;" v-for="card in data.dataCarousels">
                 <img :src="'/image/' + card.img" class="card-img-top" alt="...">
                 <div class="card-body text-center">
                     <p class="card-text fw-semibold">{{ card.data }}</p>
                     <small>{{ card.smallDate }}</small>
                 </div>
-                <span  v-for="tag in carousels.tags">
+                <span  v-for="tag in data.dataCarousels.tags">
                     <span class="badge bg-light text-dark">{{ tag.tag }}</span>
                 </span>
             </div>
@@ -20,12 +20,12 @@
 </template>
 
 <script>
-import { dataCarousels } from '../data/data';
+import { data } from '../data/data';
     export default {
         name: 'CarouselHorizontal',
         data(){
             return{
-                carousels: dataCarousels,
+                data,
             }
         },
         methods:{
@@ -53,6 +53,12 @@ import { dataCarousels } from '../data/data';
 
         .btn-sx, .btn-dx{
             position: absolute;
+            background-color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            font-size: 10px;
+            color: #BF1D2E;
         }
         .btn-sx{
             left: 30px;

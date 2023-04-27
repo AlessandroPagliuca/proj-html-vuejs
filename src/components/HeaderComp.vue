@@ -20,7 +20,7 @@
                     <i class="fa-solid fa-bars"></i>
 
                     <div class="d-flex align-items-center">
-                        <ul class="px-3 my-2" v-for="link in linksData">
+                        <ul class="px-3 my-2" v-for="link in data.dataLinks">
                             <li>
                                 <span class="text-uppercase fw-semibold">{{ link.title }}</span>
                             </li>
@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import {dataLinks} from '../data/data';
+import {data} from '../data/data';
 import UpdatesComp from './UpdatesComp.vue';
     export default {
         name: 'HeaderComp',
@@ -49,7 +49,7 @@ import UpdatesComp from './UpdatesComp.vue';
         },
         data(){
             return{
-                linksData: dataLinks,
+                data,
             }
         }
     }
