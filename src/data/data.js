@@ -268,6 +268,55 @@ export const data = reactive({
             ]
         },
     
+    ],
+    dataPosts:[
+        {
+            img: '/ideas-anime.webp',
+            data: 'Live Ideas You Might Be Anime',
+            smallDate: 'December 26, 2022',
+            text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ',
+            tags:[
+                {
+                    tag: 'culture',
+                },
+    
+                {
+                    tag: 'stories',
+                }
+            ]
+        },
+
+        {
+            img: '/visit-france.webp',
+            data: 'Reasons To Visit France',
+            smallDate: 'December 26, 2022',
+            text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ',
+            tags:[
+                {
+                    tag: 'Lifestyle',
+                },
+    
+                {
+                    tag: 'Travel',
+                }
+            ]
+        },
+
+        {
+            img: '/travel-alone-300x200.webp',
+            data: 'Travelling Alone Is Awesome',
+            smallDate: 'December 26, 2022',
+            text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ',
+            tags:[
+                {
+                    tag: 'Stories',
+                },
+    
+                {
+                    tag: 'Travel',
+                }
+            ]
+        },
     ]
 });
 
