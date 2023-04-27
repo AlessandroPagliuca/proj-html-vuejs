@@ -126,6 +126,10 @@ export default {
         p {
             font-weight: bold;
 
+            &:hover{
+                color: #BF1D2E;
+                cursor: pointer;
+            }
             
         }
 
@@ -162,4 +166,17 @@ export default {
 .border-b{
     border-bottom: 1px solid black;
 }
+
+.card-body {
+
+    p {
+
+            &:hover{
+                color: #BF1D2E;
+                cursor: pointer;
+            }
+            
+        }
+
+    }
 </style>
