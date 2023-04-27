@@ -277,11 +277,11 @@ export const data = reactive({
             text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ',
             tags:[
                 {
-                    tag: 'culture',
+                    tag: 'Culture',
                 },
     
                 {
-                    tag: 'stories',
+                    tag: 'Stories',
                 }
             ]
         },

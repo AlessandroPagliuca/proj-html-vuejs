@@ -10,6 +10,10 @@
                     <small class="card-text">{{ post.text }}</small>
                     <button class=" btn-red px-5 m-3 fw-semibold">Read More</button>
                 </div>
+                <div class="box-badge w-100">
+                    <span class="badge bg-light text-dark">{{ post.tags[0].tag }}</span>
+                    <span class="badge bg-light text-dark">{{ post.tags[1].tag }}</span>
+                </div>
             </div>
         </div>
     </section>
@@ -30,6 +34,25 @@ export default {
 <style lang="scss" scoped>
     .card{
         background-color: #f3f3f3;
+        position: relative;
+        
+
+        .box-badge{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 10px;
+
+            .badge{
+                margin: 5px;
+                font-size: 13px;
+
+                &:hover{
+                    color:#BF1D2E !important;
+                    cursor: pointer;
+                }
+            }
+        }
     }
     .btn-red{
         background-color: #BF1D2E;
