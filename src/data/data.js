@@ -335,35 +335,35 @@ export const data = reactive({
 
         {
             position:3,
-            img: '/sddefault.webp',
+            img: '/rice-ball.webp',
             title: 'Overlord Season 4 - Official',
             trailer: 'Trailer 3 | AniTV',
         },
 
         {
             position:4,
-            img: '/sddefault.webp',
+            img: '/visit-france.webp',
             title: 'Overlord Season 4 - Official',
             trailer: 'Trailer 3 | AniTV',
         },
 
         {
             position:5,
-            img: '/sddefault.webp',
+            img: '/ideas-anime.webp',
             title: 'Overlord Season 4 - Official',
             trailer: 'Trailer 3 | AniTV',
         },
 
         {
             position:6,
-            img: '/sddefault.webp',
+            img: '/winter.webp',
             title: 'Overlord Season 4 - Official',
             trailer: 'Trailer 3 | AniTV',
         },
 
         {
             position:7,
-            img: '/sddefault.webp',
+            img: '/travel-alone.webp',
             title: 'Overlord Season 4 - Official',
             trailer: 'Trailer 3 | AniTV',
         },
