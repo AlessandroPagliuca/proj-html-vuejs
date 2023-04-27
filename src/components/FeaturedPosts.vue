@@ -28,7 +28,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+    .card{
+        background-color: #f3f3f3;
+    }
     .btn-red{
         background-color: #BF1D2E;
         color: white;
