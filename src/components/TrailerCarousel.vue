@@ -8,13 +8,24 @@
                 <div class="carousel-images">
                     <img v-for="(item, index) in data.dataTrailer" :key="index" :src="'/image' + item.img">
                 </div>
-            
+                <div class="text-white entity-carousel" v-for="(item, index) in data.dataTrailer" :key="index">
+                    <img class="me-2" src="/image/channels4_profile.jpg" alt="">
+                    <span>{{ item.title }}</span>
+                    <span>{{ item.trailer }}</span>
+                </div>
+
+                <div class="">
+                   <!--Aggiungere le icons di guarda piu' tardi e condivisione-->
+                </div>
             </div>
 
             <div class="box-thumbnails me-2">
+                <div class="">
+                   <!--Aggiungere box contenente <h5>Video Playlist</h5> e  num 1/7 videos-->
+                   
+                </div>
+                <div class="carousel-thumbnails py-3" v-for="(item, index) in data.dataTrailer" :key="index" @click="setCurrentImage(index)">
 
-                <div class="carousel-thumbnails py-3"  v-for="(item, index) in data.dataTrailer" :key="index"  @click="setCurrentImage(index)">
-                    
                     <div class="btn ms-3">{{ index + 1 }}</div>
                     <img :src="'/image' + item.img">
 
@@ -69,6 +80,18 @@ export default {
     position: relative;
     width: 70%;
     height: 450px;
+
+    .entity-carousel{
+        position: absolute;
+        top: 15px;
+        left: 15px;
+
+        img{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+    }
 }
 
 .carousel-images {
@@ -116,15 +139,16 @@ export default {
     height: 450px;
     overflow-y: auto;
 
-    .btn{
+    .btn {
         background-color: #333;
         color: white;
 
-        &:hover{
+        &:hover {
             background-color: #BF1D2E;
         }
     }
-    .text-trailer:hover{
+
+    .text-trailer:hover {
         color: #BF1D2E;
     }
 }
