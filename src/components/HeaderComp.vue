@@ -96,7 +96,7 @@ import UpdatesComp from './UpdatesComp.vue';
             cursor: pointer;
 
             &:hover{
-            color: red;
+            color: #BF1D2E;
         }
         }
     }
