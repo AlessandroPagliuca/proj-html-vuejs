@@ -36,5 +36,9 @@ export default {
         border-radius: 20px;
         padding-top: 8px;
         padding-bottom: 8px;
+
+        &:hover{
+            background-color: #92101d;
+        }
     }
 </style>
