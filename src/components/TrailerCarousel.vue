@@ -1,18 +1,31 @@
 <template>
     <div class="container">
+
         <div class="d-flex py-3">
+
             <div class="carousel ms-2">
+
                 <div class="carousel-images">
                     <img v-for="(item, index) in data.dataTrailer" :key="index" :src="'/image' + item.img">
                 </div>
-
+            
             </div>
+
             <div class="box-thumbnails me-2">
-                <div class="carousel-thumbnails d-flex flex-column">
-                    <img v-for="(item, index) in data.dataTrailer" :key="index" :src="'/image' + item.img"
-                        @click="setCurrentImage(index)">
+
+                <div class="carousel-thumbnails py-3"  v-for="(item, index) in data.dataTrailer" :key="index"  @click="setCurrentImage(index)">
+                    
+                    <div class="btn ms-3">{{ index + 1 }}</div>
+                    <img :src="'/image' + item.img">
+
+                    <div class="text-trailer">
+                        <span>{{ item.title }}</span> <br>
+                        <span>{{ item.trailer }}</span>
+                    </div>
+
                 </div>
             </div>
+
         </div>
 
 
@@ -31,7 +44,7 @@ export default {
         };
     },
     mounted() {
-        // Imposto classe "show" sull'img corrente all'avvio
+        // Imposto classe "show" sull'img all'avvio
         const currentImage = document.querySelector('.carousel-images img');
         currentImage.classList.add('show');
     },
@@ -55,7 +68,7 @@ export default {
 .carousel {
     position: relative;
     width: 70%;
-    height: 500px;
+    height: 450px;
 }
 
 .carousel-images {
@@ -75,14 +88,18 @@ export default {
 
 .carousel-thumbnails {
     display: flex;
-    align-items: start;
+    align-items: center;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+
 
     img {
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 60px;
         object-fit: cover;
         margin: 0 10px;
-        cursor: pointer;
+        border-radius: 10px;
     }
 }
 
@@ -91,9 +108,24 @@ export default {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
 }
 
 .box-thumbnails {
     width: 30%;
+    height: 450px;
+    overflow-y: auto;
+
+    .btn{
+        background-color: #333;
+        color: white;
+
+        &:hover{
+            background-color: #BF1D2E;
+        }
+    }
+    .text-trailer:hover{
+        color: #BF1D2E;
+    }
 }
 </style>
