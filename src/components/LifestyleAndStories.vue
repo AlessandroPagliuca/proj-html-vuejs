@@ -170,7 +170,8 @@ export default {
 .card-body {
 
     p {
-
+        font-weight: bold;
+        
             &:hover{
                 color: #BF1D2E;
                 cursor: pointer;
