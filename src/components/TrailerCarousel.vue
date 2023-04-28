@@ -14,6 +14,18 @@
                     <span>{{ item.title }}</span>
                     <span>{{ item.trailer }}</span>
                 </div>
+                <!--logo guarda piu' tardi e condivisione-->
+                <div class="entity-logo d-flex fw-semibold">
+                    <div class="text-center me-4">
+                        <i class="fa-solid fa-clock text-white"></i>
+                        <p>Guarda più...</p>
+                    </div>
+                    <div class="text-center me-4">
+                        <i class="fa-solid fa-share text-white"></i>
+                        <p>Condividi</p>
+
+                    </div>
+                </div>
 
                 <div class="icon-youtube">
                     <i class="fa-brands fa-youtube"></i>
@@ -88,6 +100,19 @@ export default{
     width: 70%;
     height: 450px;
 
+    .entity-logo{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        i{
+            font-size: 25px;
+        }
+
+        p{
+            color: #f3f3f3;
+            font-size: 14px;
+        }
+    }
     .entity-carousel{
         position: absolute;
         top: 15px;
