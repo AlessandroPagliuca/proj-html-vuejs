@@ -41,6 +41,7 @@ import { data } from '../data/data';
     }
     .card{
         position: relative;
+        cursor: pointer;
 
         .box-badge {
         position: absolute;
