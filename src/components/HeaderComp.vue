@@ -1,7 +1,7 @@
 <template>
     <header>
        <UpdatesComp />
-       <!--Advertising banner-->
+       <!--Advertising banner <i class="fa-solid fa-house"></i> -->
        <div class="bg-white">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center py-3">
@@ -20,9 +20,11 @@
                     <i class="fa-solid fa-bars"></i>
 
                     <div class="d-flex align-items-center">
-                        <ul class="px-3 my-2" v-for="link in data.dataLinks">
+                        <ul class="px-3 my-2" v-for="link in data.dataLNavLinks">
                             <li>
+                                <i :class="'me-2 fa-solid' + link.icon"></i>
                                 <span class="text-uppercase fw-semibold">{{ link.title }}</span>
+                                <i :class="' ms-2 fa-solid' + link.arrow "></i>
                             </li>
                         </ul>
                     </div>
