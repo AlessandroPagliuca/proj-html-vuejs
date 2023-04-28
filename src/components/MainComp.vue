@@ -12,6 +12,8 @@
             </div>
         </div>
         <FeaturedPosts />
+        <TrailerCarousel />
+        <PicturesBottom />
     </main>
 </template>
 
@@ -20,6 +22,8 @@ import CarouselHorizontal from './CarouselHorizontal.vue';
 import SecondCarousel from './SecondCarousel.vue';
 import LifestyleAndStories from './LifestyleAndStories.vue';
 import FeaturedPosts from './FeaturedPosts.vue';
+import TrailerCarousel from './TrailerCarousel.vue';
+import PicturesBottom from './PicturesBottom.vue';
     export default {
         name: 'MainComp',
         components:{
@@ -27,6 +31,8 @@ import FeaturedPosts from './FeaturedPosts.vue';
             SecondCarousel,
             LifestyleAndStories,
             FeaturedPosts,
+            TrailerCarousel,
+            PicturesBottom,
         }
     }
 </script>
