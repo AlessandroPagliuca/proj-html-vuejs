@@ -63,7 +63,7 @@ export default {
         padding-bottom: 8px;
 
         &:hover{
-            background-color: #92101d;
+            background-color: #333;
         }
     }
 </style>
