@@ -134,7 +134,7 @@ export const data = reactive({
             text: '',
             tags:[
                 {
-                    tag: 'food',
+                    tag1: 'food',
                 }
             ]
         },
@@ -149,7 +149,7 @@ export const data = reactive({
             text: '',
             tags:[
                 {
-                    tag: 'fashion',
+                    tag1: 'fashion',
                 }
             ]
         },
@@ -164,7 +164,7 @@ export const data = reactive({
             text: '',
             tags:[
                 {
-                    tag: 'fashion',
+                    tag1: 'fashion',
                 }
             ]
         },
@@ -179,12 +179,10 @@ export const data = reactive({
             text: '',
             tags:[
                 {
-                    tag: 'culture',
+                    tag1: 'culture',
+
+                    tag2: 'stories',
                 },
-    
-                {
-                    tag: 'stories',
-                }
             ]
         },
     

@@ -7,9 +7,10 @@
                     <p class="card-text fw-semibold">{{ card.data }}</p>
                     <small>{{ card.smallDate }}</small>
                 </div>
-                <span  v-for="tag in data.dataCarousels.tags">
-                    <span class="badge bg-light text-dark">{{ tag.tag }}</span>
-                </span>
+                <div class="box-badge">
+                    <span class="badge bg-light text-dark">{{ card.tags[0].tag1 }}</span>
+                    <span class="badge bg-light text-dark">{{ card.tags[0].tag2 }}</span>
+                </div>
             </div>
             <!--btn sx and btn dx-->
             <button type="button" class="btn fa-solid fa-chevron-left btn-sx"></button>
@@ -41,12 +42,24 @@ import { data } from '../data/data';
     .card{
         position: relative;
 
-        .badge{
-            position: absolute;
-            top: 4px;
-            left: 40%;
-            right: 40%;
+        .box-badge {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        top: 10px;
+
+        .badge {
+            margin: 5px;
+            font-size: 13px;
+
+            &:hover {
+                color: #BF1D2E !important;
+                cursor: pointer;
+            }
         }
+    }
+
     }
     .pos-relative{
         position: relative;
