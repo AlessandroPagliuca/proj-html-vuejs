@@ -7,11 +7,11 @@
             <div class="d-flex justify-content-between py-5 box-top">
                 <div class="d-flex justify-content-between box-left">
                     <ul class="d-flex justify-content-between align-items-center w-100">
-                        <li class="" v-for="dataLink in data.dataLinks" :key="dataLink.title">
+                        <li class="w-25" v-for="dataLink in data.dataLinks" :key="dataLink.title">
                             <h6 class="text-uppercase">{{ dataLink.title }}</h6>
                             <ul>
                                 <li v-for="link in dataLink.links" :key="link.link">
-                                    <small>{{ link.link }}</small>
+                                    <small class="text-capitalize fw-semibold">{{ link.link }}</small>
                                 </li>
                             </ul>
                         </li>
@@ -21,7 +21,7 @@
                 <div class="box-right">
                     <h6 class="text-uppercase text-white">subscribe to newsletter</h6>
                     <input type="email" class="form-control" placeholder="Email">
-                    <button class=" btn btn-secondary text-uppercase text-white my-3 w-100">subscribe</button>
+                    <button class=" btn btn-secondary text-uppercase fw-semibold text-white my-3 w-100">subscribe</button>
                 </div>
             </div>
 
@@ -73,17 +73,28 @@ footer {
         padding: 0;
         color: white;
 
-        li {
+        li small {
             cursor: pointer;
+            
+            &:hover{
+                font-family: 'Pacifico';
+                color: #333;
+            }
         }
     }
 
     .box-left {
-        width: 60%;
+        width: 75%;
     }
 
     .box-right {
         width: 25%;
+
+        .btn:hover{
+            color: #BF1D2E !important;
+            background-color: white;
+
+        }
     }
 
     .box-top {
