@@ -28,6 +28,7 @@ export default {
         background-color: black;
         position: relative;
         border: 0px;
+        cursor: pointer;
     }
     .image-f{
         width: 100%;
