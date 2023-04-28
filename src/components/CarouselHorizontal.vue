@@ -62,9 +62,21 @@ import { data } from '../data/data';
         }
         .btn-sx{
             left: 30px;
+            &:hover{
+                color: white;
+                background-color: #333;
+                border: 1px solid #333;
+
+            }
         }
         .btn-dx{
             right: 30px;
+
+            &:hover{
+                color: white;
+                background-color: #BF1D2E;
+                border: 1px solid #333;
+            }
         }
     }
 </style>
