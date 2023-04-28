@@ -1,5 +1,38 @@
 import {reactive} from 'vue';
 export const data = reactive({
+    dataLNavLinks:[
+        {
+            title: 'home',
+            icon: ' fa-house',
+        },
+    
+        {
+            title: 'lifestyle',
+            icon: ' fa-suitcase',
+            arrow: ' fa-chevron-down',
+
+        },
+    
+        {
+            title: 'stories',
+            icon: ' fa-book-open-reader',
+            arrow: ' fa-chevron-down',
+
+        },
+    
+        {
+            title: 'pages',
+            icon: ' fa-book',
+            arrow: ' fa-chevron-down',
+
+        },
+
+        {
+            title: 'about us',
+            icon: ' fa-user',
+
+        },
+    ],
     dataLinks:[
         {
             title: 'get started',
