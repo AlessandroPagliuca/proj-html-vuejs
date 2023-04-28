@@ -329,43 +329,76 @@ export const data = reactive({
         {
             position:2,
             img: '/hqdefault (1).jpg', 
-            title: 'Overlord Season 4 - Official',
-            trailer: 'Trailer 3 | AniTV',
+            title: 'Rent A Girlfriend Season 2 -',
+            trailer: ' Official Trailer | AniTV',
         },
 
         {
             position:3,
             img: '/rice-ball.webp',
-            title: 'Overlord Season 4 - Official',
-            trailer: 'Trailer 3 | AniTV',
+            title: 'Uncle From Another Wolrd -',
+            trailer: ' Official Trailer 2 | AniTV',
         },
 
         {
             position:4,
             img: '/visit-france.webp',
-            title: 'Overlord Season 4 - Official',
-            trailer: 'Trailer 3 | AniTV',
+            title: 'Prima Doll -',
+            trailer: ' Official Trailer | AniTV',
         },
 
         {
             position:5,
             img: '/ideas-anime.webp',
-            title: 'Overlord Season 4 - Official',
-            trailer: 'Trailer 3 | AniTV',
+            title: 'Shoot! Goal To The Future -',
+            trailer: ' Official Trailer 3 | AniTV',
         },
 
         {
             position:6,
             img: '/winter.webp',
-            title: 'Overlord Season 4 - Official',
-            trailer: 'Trailer 3 | AniTV',
+            title: 'Overlord Season 1 -',
+            trailer: ' Official Trailer 3 | AniTV',
         },
 
         {
             position:7,
             img: '/travel-alone.webp',
-            title: 'Overlord Season 4 - Official',
-            trailer: 'Trailer 3 | AniTV',
+            title: 'Overlord Season 3 -',
+            trailer: ' Official Trailer 3 | AniTV',
+        },
+    ],
+    picturesBottom:[
+        {
+            img: '/anime-fashion.webp',
+            data: 'Fashion',
+        },
+
+        {
+            img: '/success-story.webp',
+            data: 'Culture',
+           
+        },
+
+        {
+            img: '/healthy-foods.webp',
+            data: 'Food',
+        },
+
+        {
+            img: '/visit-france.webp',
+            data: 'Lifestyle',
+        },
+
+        {
+            img: '/travel-alone-300x200.webp',
+            data: 'Stories',
+           
+        },
+
+        {
+            img: '/best-places.webp',
+            data: 'Travel',
         },
     ]
 });
