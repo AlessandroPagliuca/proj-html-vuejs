@@ -15,14 +15,14 @@
                     <span>{{ item.trailer }}</span>
                 </div>
 
-                <div class="">
-                   <!--Aggiungere le icons di guarda piu' tardi e condivisione 
-                    <i class="fa-brands fa-youtube"></i>-->
+                <div class="icon-youtube">
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-solid fa-circle text-white"></i>
                 </div>
             </div>
 
             <div class="box-thumbnails me-2">
-                <!--Aggiungere box contenente <h5>Video Playlist</h5> e  num 1/7 videos-->
+                <!--box contenente <h5>Video Playlist</h5> e  num 1/7 videos-->
                 <div class="playlist ps-4 py-3 d-flex">
                     <i class="fa-solid fa-play"></i>
                     <div class="d-flex flex-column ps-3">
@@ -97,6 +97,24 @@ export default{
             width: 35px;
             height: 35px;
             border-radius: 50%;
+        }
+    }
+
+    .icon-youtube{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        color: red;
+        .fa-youtube{  
+            font-size: 80px;
+            z-index: 20;
+        }
+        .fa-circle{
+            position: absolute;
+            font-size: 50px;
         }
     }
 }
