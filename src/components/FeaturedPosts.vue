@@ -51,6 +51,7 @@ export default {
     .bg-opacity {
         position: relative;
         background-color: #BF1D2E !important;
+        cursor: pointer;
 
         .box-tag {
             position: absolute;
