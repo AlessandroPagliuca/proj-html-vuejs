@@ -8,6 +8,7 @@
                 <div class="carousel-images">
                     <img v-for="(item, index) in data.dataTrailer" :key="index" :src="'/image' + item.img">
                 </div>
+
                 <div class="text-white entity-carousel" v-for="(item, index) in data.dataTrailer" :key="index">
                     <img class="me-2" src="/image/channels4_profile.jpg" alt="">
                     <span>{{ item.title }}</span>
@@ -15,18 +16,24 @@
                 </div>
 
                 <div class="">
-                   <!--Aggiungere le icons di guarda piu' tardi e condivisione-->
+                   <!--Aggiungere le icons di guarda piu' tardi e condivisione 
+                    <i class="fa-brands fa-youtube"></i>-->
                 </div>
             </div>
 
             <div class="box-thumbnails me-2">
-                <div class="">
-                   <!--Aggiungere box contenente <h5>Video Playlist</h5> e  num 1/7 videos-->
-                   
+                <!--Aggiungere box contenente <h5>Video Playlist</h5> e  num 1/7 videos-->
+                <div class="playlist ps-4 py-3 d-flex">
+                    <i class="fa-solid fa-play"></i>
+                    <div class="d-flex flex-column ps-3">
+                        <h5>Video Playlist</h5>
+                        <small>{{ 1  }} / 7 Videos </small>
+                    </div>
                 </div>
                 <div class="carousel-thumbnails py-3" v-for="(item, index) in data.dataTrailer" :key="index" @click="setCurrentImage(index)">
-
+                    
                     <div class="btn ms-3">{{ index + 1 }}</div>
+
                     <img :src="'/image' + item.img">
 
                     <div class="text-trailer">
@@ -46,7 +53,7 @@
 
 <script>
 import { data } from '../data/data';
-export default {
+export default{
     name: 'TrailerCarousel',
     data() {
         return {
@@ -106,6 +113,7 @@ export default {
         height: 100%;
         object-fit: cover;
         display: none;
+
     }
 }
 
@@ -133,7 +141,10 @@ export default {
     object-fit: cover;
 
 }
+.carousel-images .text-trailer.active{
+    display: block;
 
+}
 .box-thumbnails {
     width: 30%;
     height: 450px;
@@ -150,6 +161,15 @@ export default {
 
     .text-trailer:hover {
         color: #BF1D2E;
+    }
+}
+.playlist{
+    background-color: #333;
+    color: white;
+    
+    i{
+        font-size: 35px;
+
     }
 }
 </style>
