@@ -17,7 +17,7 @@
 
             <div class="box-nav">
                 <div class="container d-flex justify-content-between align-items-center">
-                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars font-s"></i>
 
                     <div class="d-flex align-items-center">
                         <ul class="px-3 my-2" v-for="link in data.dataLNavLinks">
@@ -30,7 +30,7 @@
                     </div>
                 
 
-                    <i class="fa-solid fa-search"></i>
+                    <i class="fa-solid fa-search font-s"></i>
                 </div>
             </div>
        </div>
@@ -103,7 +103,9 @@ import UpdatesComp from './UpdatesComp.vue';
         }
     }
 
-
+    .font-s{
+        font-size: 25px;
+    }
     }
    
 
