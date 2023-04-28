@@ -1,5 +1,8 @@
 <template>
-    <footer>
+    <footer class="d-flex justify-content-center">
+        <!--triangle icon-->
+        <span class="triangle"></span>
+        
         <div class="container">
             <div class="d-flex justify-content-between py-5 box-top">
                 <div class="d-flex justify-content-between box-left">
@@ -49,6 +52,21 @@ export default {
 <style lang="scss" scoped>
 footer {
     background-color: #BF1D2E;
+    border-top: 5px solid #333;
+    position: relative;
+
+    .triangle {
+        position: absolute;
+        top: -15px;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-right: 15px solid #333;
+        border-bottom: 20px solid transparent;
+        transform: rotate(270deg);
+
+
+    }
 
     ul {
         list-style: none;
@@ -67,7 +85,8 @@ footer {
     .box-right {
         width: 25%;
     }
-    .box-top{
+
+    .box-top {
         border-bottom: 1px solid white;
     }
 }
