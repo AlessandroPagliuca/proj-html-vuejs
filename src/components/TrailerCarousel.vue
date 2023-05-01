@@ -133,6 +133,7 @@ export default{
         height: 100%;
         width: 100%;
         color: red;
+        cursor: pointer;
         .fa-youtube{  
             font-size: 80px;
             z-index: 20;
@@ -150,6 +151,7 @@ export default{
     left: 0;
     width: 100%;
     height: 100%;
+    cursor: pointer;
 
     img {
         width: 100%;
