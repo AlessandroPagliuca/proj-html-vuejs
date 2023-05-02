@@ -6,13 +6,13 @@
             <div class="carousel ms-2">
 
                 <div class="carousel-images">
-                    <img v-for="(item, index) in data.dataTrailer" :key="index" :src="'/image' + item.img">
+                    <img :src="'/image' + data.dataTrailer[currentImageIndex].img">
                 </div>
 
-                <div class="text-white entity-carousel" v-for="(item, index) in data.dataTrailer" :key="index">
+                <div class="text-white entity-carousel">
                     <img class="me-2" src="/image/channels4_profile.jpg" alt="">
-                    <span>{{ item.title }}</span>
-                    <span>{{ item.trailer }}</span>
+                    <span>{{ data.dataTrailer[currentImageIndex].title }}</span>
+                    <span>{{ data.dataTrailer[currentImageIndex].trailer }}</span>
                 </div>
                 <!--logo guarda piu' tardi e condivisione-->
                 <div class="entity-logo d-flex fw-semibold">
@@ -39,7 +39,7 @@
                     <i class="fa-solid fa-play"></i>
                     <div class="d-flex flex-column ps-3">
                         <h5>Video Playlist</h5>
-                        <small>{{ 1  }} / 7 Videos </small>
+                        <small>{{ currentImageIndex + 1  }} / 7 Videos </small>
                     </div>
                 </div>
                 <div class="carousel-thumbnails py-3" v-for="(item, index) in data.dataTrailer" :key="index" @click="setCurrentImage(index)">
@@ -80,13 +80,6 @@ export default{
     },
     methods: {
         setCurrentImage(index) {
-            // Rimuovo la classe "show" dall'img corrente
-            const currentImage = document.querySelector('.carousel-images img.show');
-            currentImage.classList.remove('show');
-            // Aggiungo la classe "show" all'img selezionata
-            const newImage = document.querySelectorAll('.carousel-images img')[index];
-            newImage.classList.add('show');
-            // Imposto l'indice dell'img corrente
             this.currentImageIndex = index;
         },
     },
@@ -157,7 +150,6 @@ export default{
         width: 100%;
         height: 100%;
         object-fit: cover;
-        display: none;
 
     }
 }
@@ -180,7 +172,6 @@ export default{
 }
 
 .carousel-images img.show {
-    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
